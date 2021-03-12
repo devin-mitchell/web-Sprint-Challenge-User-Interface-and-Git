@@ -92,6 +92,10 @@ header .links {
 .links a {
     color: black;
     font-size: .9rem;
+    transition: all .2s ease-in-out;
+}
+.links a:hover {
+    transform: scale(1.2); 
 }
 
 
