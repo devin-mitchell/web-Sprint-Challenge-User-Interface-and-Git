@@ -94,9 +94,7 @@ header .links {
     font-size: .9rem;
     transition: all .2s ease-in-out;
 }
-.links a:hover {
-    transform: scale(1.2); 
-}
+
 
 
 /* background-image */
@@ -219,12 +217,14 @@ header .links {
 }
 
 .box-container-about a {
+    color:black;
     width:40%;
     padding:3%;
     margin-top: 5%;
     border: 2px solid black;
     border-radius: 13px;
     text-align:center;
+    transition: all .2s ease-in-out
 }
 
 .box-container-about h2 {
@@ -272,6 +272,15 @@ footer nav a {
 }
 
 
+/* psuedo */
 
+.links a:hover {
+    transform: scale(1.2); 
+}
 
+.box-container-about a:hover {
+    transform: scale(1.1);
+    background-color:rgba(119, 0, 255, 0.158);
+
+}
 
