@@ -197,6 +197,7 @@ header .links {
 }
 
 .boxes-about {
+    height:100%;
     margin-top:5%;
     display:flex;
     flex-wrap: wrap;
@@ -206,12 +207,25 @@ header .links {
 .box-container-about {
     display:flex;
     flex-direction:column;
+    justify-content: space-around;
     width: 45%;
     padding-bottom:5%;
     border-bottom: 1px dashed black;
     margin-bottom: 5%;
 }
 
+.box-container-about a {
+    width:40%;
+    padding:3%;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 13px;
+    text-align:center;
+}
+
+.box-container-about h2 {
+    padding-top:5%;
+}
 
 
 /* section3 */
@@ -227,6 +241,10 @@ header .links {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#section3-about {
+    margin-bottom:10%;
 }
 
 /* footer */
