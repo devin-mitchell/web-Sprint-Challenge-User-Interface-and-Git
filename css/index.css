@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* general style */
 * {
     box-sizing: border-box;
 }
@@ -66,6 +66,55 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2% 22%;
+}
+
+header .icon {
+    padding-bottom: 2%;
+}
+
+header .links {
+    width: 80%;
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.links a {
+    color: black;
+    font-size: .9rem;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/* background-image */
+.backgroundImg {
+    height: 20vh;
+    margin: 0% 22% 2% 22%;
+    background-image: url(/img/jumbo.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.backgroundImg-about {
+    height: 20vh;
+    margin: 0% 22% 2% 22%;
+    background-image: url(/img/jumbo-about.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* section1 */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -85,6 +134,12 @@ p {
     padding-bottom: 20px;  
 }
 
+.about {
+    border-bottom: 1px dashed black;
+    padding: 2%;
+}
+
+/* section2 */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -112,6 +167,72 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+.middle-content .boxes .box2 {
+    background-color: gold;
+}
+.middle-content .boxes .box3 {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background-color: coral;
+}
+.middle-content .boxes .box5 {
+    background-color: crimson;
+}
+.middle-content .boxes .box6 {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background-color: hotpink;
+}
+.middle-content .boxes .box9 {
+    background-color: indigo;
+}
+.middle-content .boxes .box10 {
+    background-color: dodgerblue;
+}
+
+.boxes-about {
+    height:100%;
+    margin-top:5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.box-container-about {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    width: 45%;
+    padding-bottom:5%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 5%;
+}
+
+.box-container-about a {
+    color:black;
+    width:40%;
+    padding:3%;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 13px;
+    text-align:center;
+    transition: all .2s ease-in-out
+}
+
+.box-container-about h2 {
+    padding-top:5%;
+}
+
+
+/* section3 */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +247,11 @@ p {
     padding-right: 0;
 }
 
+#section3-about {
+    margin-bottom:10%;
+}
+
+/* footer */
 footer {
     width: 100%;
     background: black;
@@ -144,3 +270,17 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* psuedo */
+
+.links a:hover {
+    transform: scale(1.2); 
+}
+
+.box-container-about a:hover {
+    transform: scale(1.1);
+    background-color:rgba(119, 0, 255, 0.158);
+
+}
+
